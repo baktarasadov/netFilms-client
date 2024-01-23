@@ -1,5 +1,5 @@
 import { IInput } from "@/types/ui/IInput";
-import React from "react";
+import React, { memo } from "react";
 
 const Input: React.FC<IInput> = ({
   type,
@@ -27,4 +27,4 @@ const Input: React.FC<IInput> = ({
   );
 };
 
-export default Input;
+export default memo(Input);

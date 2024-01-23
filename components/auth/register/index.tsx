@@ -39,7 +39,7 @@ const Register = () => {
           <h2
             className={`text-white uppercase mb-2 text-2xl ${dancingScript.className}`}
           >
-            Register
+            Sign In
           </h2>
           <form onSubmit={formik.handleSubmit}>
             {inputRegisterList.map((element) => (

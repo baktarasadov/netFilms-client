@@ -1,5 +1,5 @@
 import { IButton } from "@/types/ui/IButton";
-import React from "react";
+import React, { memo } from "react";
 
 const Button: React.FC<IButton> = ({
   children,
@@ -22,4 +22,4 @@ const Button: React.FC<IButton> = ({
   );
 };
 
-export default Button;
+export default memo(Button);
