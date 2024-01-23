@@ -1,11 +1,25 @@
+"use client";
 import { ImUserPlus } from "react-icons/im";
+import { ImUserMinus } from "react-icons/im";
+
 import Logo from "@/components/UI/logo";
 import { dancingScript } from "@/utils/font";
-import React from "react";
+import React, { useState } from "react";
 import { RiMovie2Line } from "react-icons/ri";
 import { BsBasket } from "react-icons/bs";
 import { FaSearch } from "react-icons/fa";
+import Modal from "@/components/UI/modal";
+import Link from "next/link";
 const Header = () => {
+  const [openModal, setOpenModal] = useState(false);
+  const [isLogin, setIsLogin] = useState(false);
+
+  const handleClick = () => {
+    setOpenModal(!openModal);
+    setIsLogin(!isLogin);
+  };
+  console.log("Render header");
+
   return (
     <>
       <header>
@@ -40,7 +54,23 @@ const Header = () => {
                 <BsBasket />
               </li>
               <li>
-                <ImUserPlus />
+                {isLogin ? (
+                  <span className="text-white" onClick={() => handleClick()}>
+                    <ImUserMinus />
+                  </span>
+                ) : (
+                  <Link href={"/auth/login"}>
+                    <ImUserPlus />
+                  </Link>
+                )}
+
+                {openModal && (
+                  <Modal
+                    handleClick={handleClick}
+                    openModal={openModal}
+                    title="Are You okey?"
+                  />
+                )}
               </li>
             </ul>
           </div>
