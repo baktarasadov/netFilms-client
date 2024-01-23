@@ -1,0 +1,16 @@
+/* styles/globals.css */
+.custom-bg {
+  @apply bg-blue-500 text-white;
+}
+
+.container {
+  @apply w-10/12 mx-auto;
+}
+
+.input-group {
+  @apply gap-2 flex items-center border-b text-white  h-10 w-[250px];
+}
+
+.btn-red {
+  @apply text-white w-full  font-semibold py-[7px] rounded-3xl bg-[red] cursor-pointer hover:opacity-70 transition-all text-[14px];
+}
