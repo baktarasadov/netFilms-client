@@ -38,7 +38,7 @@ const Login = () => {
       <div>
         <div className="flex flex-col items-center ">
           <h2
-            className={`text-white uppercase mb-6 text-2xl ${dancingScript.className}`}
+            className={`text-white uppercase mb-5 text-2xl ${dancingScript.className}`}
           >
             Login
           </h2>
@@ -99,7 +99,7 @@ const Login = () => {
               Login
             </Button>
             <Link
-              href={"/register"}
+              href={"/auth/register"}
               className="text-white text-xs border-b mt-5 w-fit"
             >
               Do you no have account?

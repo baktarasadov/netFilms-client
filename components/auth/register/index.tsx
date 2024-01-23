@@ -37,7 +37,7 @@ const Register = () => {
       <div>
         <div className="flex flex-col items-center">
           <h2
-            className={`text-white uppercase mb-2 text-2xl ${dancingScript.className}`}
+            className={`text-white uppercase mb-5 text-2xl ${dancingScript.className}`}
           >
             Sign In
           </h2>
@@ -74,7 +74,7 @@ const Register = () => {
               Sign In
             </Button>
             <Link
-              href={"/login"}
+              href={"/auth/login"}
               className="text-white text-xs border-b mt-2 w-fit"
             >
               Do you have account?
