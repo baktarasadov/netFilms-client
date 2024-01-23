@@ -3,8 +3,6 @@ import Logo from "@/components/UI/logo";
 import { dancingScript } from "@/utils/font";
 import React from "react";
 import { RiMovie2Line } from "react-icons/ri";
-import { ImUserMinus } from "react-icons/im";
-import { CiSearch } from "react-icons/ci";
 import { BsBasket } from "react-icons/bs";
 import { FaSearch } from "react-icons/fa";
 const Header = () => {

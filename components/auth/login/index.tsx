@@ -36,9 +36,9 @@ const Login = () => {
   return (
     <>
       <div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center ">
           <h2
-            className={`text-white uppercase mb-2 text-2xl ${dancingScript.className}`}
+            className={`text-white uppercase mb-6 text-2xl ${dancingScript.className}`}
           >
             Login
           </h2>
@@ -93,14 +93,14 @@ const Login = () => {
               )}
             </div>
             <Button
-              className={`btn-red mt-1 ${roboto.className}`}
+              className={`btn-red mt-4 ${roboto.className}`}
               onClick={handleButtonClick}
             >
               Login
             </Button>
             <Link
               href={"/register"}
-              className="text-white text-xs border-b mt-2 w-fit"
+              className="text-white text-xs border-b mt-5 w-fit"
             >
               Do you no have account?
             </Link>
