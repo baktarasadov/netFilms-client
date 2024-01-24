@@ -1,7 +1,6 @@
 "use client";
 import { ImUserPlus } from "react-icons/im";
 import { ImUserMinus } from "react-icons/im";
-
 import Logo from "@/components/UI/logo";
 import { dancingScript } from "@/utils/font";
 import React, { useState } from "react";
@@ -12,7 +11,7 @@ import Modal from "@/components/UI/modal";
 import Link from "next/link";
 const Header = () => {
   const [openModal, setOpenModal] = useState(false);
-  const [isLogin, setIsLogin] = useState(false);
+  const [isLogin, setIsLogin] = useState(true);
 
   const handleClick = () => {
     setOpenModal(!openModal);
@@ -65,11 +64,7 @@ const Header = () => {
                 )}
 
                 {openModal && (
-                  <Modal
-                    handleClick={handleClick}
-                    openModal={openModal}
-                    title="Are You okey?"
-                  />
+                  <Modal handleClick={handleClick} title="Are You okey?" />
                 )}
               </li>
             </ul>
