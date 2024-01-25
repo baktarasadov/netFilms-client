@@ -9,6 +9,7 @@ import { BsBasket } from "react-icons/bs";
 import { FaSearch } from "react-icons/fa";
 import Modal from "@/components/UI/modal";
 import Link from "next/link";
+import Input from "@/components/UI/input";
 const Header = () => {
   const [openModal, setOpenModal] = useState(false);
   const [isLogin, setIsLogin] = useState(true);
@@ -45,9 +46,15 @@ const Header = () => {
             </ul>
           </div>
           <div className="text-white">
-            <ul className="flex gap-2 text-base">
-              <li>
-                <FaSearch />
+            <ul className="flex items-center gap-2 text-base">
+              <li className="flex items-center  ">
+                <Input
+                  className={`text-black rounded-l text-sm px-3 py-1 ${dancingScript.className}`}
+                  placeholder="Search Movie"
+                />
+                <span className=" text-black bg-white p-[6px] rounded-r">
+                  <FaSearch />
+                </span>
               </li>
               <li>
                 <BsBasket />

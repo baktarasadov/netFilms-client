@@ -2,9 +2,7 @@ import React from "react";
 import { mediaList } from "../../../constants/footer/socialMedia";
 import Link from "next/link";
 import { dancingScript } from "@/utils/font";
-import Input from "@/components/UI/input";
-import Button from "@/components/UI/button";
-import { MdOutlineMailOutline } from "react-icons/md";
+import { memo } from "react";
 
 const Footer = () => {
   return (
@@ -31,7 +29,6 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-
           <p
             className={`text-center text-xl hover:text-[red] ease-in-out duration-300  mt-4 ${dancingScript.className}`}
           >
@@ -43,4 +40,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default memo(Footer);
