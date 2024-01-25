@@ -9,8 +9,8 @@ const Modal: React.FC<IModal> = ({ handleClick, title }) => {
 
   return (
     <>
-      <div className="bg-[black] w-screen h-screen absolute left-0 top-0 opacity-[0.8]">
-        <div className="flex justify-center mt-[250px] ">
+      <div className="bg-[black] w-screen h-screen absolute left-0 top-0 ">
+        <div className="flex justify-center mt-[200px] ">
           <OutsideClickHandler
             onOutsideClick={() => {
               handleClick();
