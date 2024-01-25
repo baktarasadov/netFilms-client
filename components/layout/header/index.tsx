@@ -10,10 +10,11 @@ import { FaSearch } from "react-icons/fa";
 import Modal from "@/components/UI/modal";
 import Link from "next/link";
 import Input from "@/components/UI/input";
+import SearchList from "@/components/search/searchList";
 const Header = () => {
   const [openModal, setOpenModal] = useState(false);
   const [isLogin, setIsLogin] = useState(true);
-
+  const [isShowSearch, setIsShowSearch] = useState<boolean>(false);
   const handleClick = () => {
     setOpenModal(!openModal);
     setIsLogin(!isLogin);
@@ -23,7 +24,7 @@ const Header = () => {
   return (
     <>
       <header>
-        <div className="container flex justify-between items-center h-20">
+        <div className="container flex justify-between items-center h-20 ">
           <div>
             <Logo
               className={`flex items-center gap-1 ${dancingScript.className}`}
@@ -47,14 +48,20 @@ const Header = () => {
           </div>
           <div className="text-white">
             <ul className="flex items-center gap-2 text-base">
-              <li className="flex items-center  ">
+              <li className="flex items-center  relative">
                 <Input
                   className={`text-black rounded-l text-sm px-3 py-1 ${dancingScript.className}`}
                   placeholder="Search Movie"
+                  onChange={() => setIsShowSearch(true)}
                 />
-                <span className=" text-black bg-white p-[6px] rounded-r">
+                <span className="bg-[red] p-[6px] rounded-r">
                   <FaSearch />
                 </span>
+                {isShowSearch && (
+                  <div className="absolute left-0 top-9 w-full">
+                    <SearchList setIsShowSearch={setIsShowSearch} />
+                  </div>
+                )}
               </li>
               <li>
                 <BsBasket />
