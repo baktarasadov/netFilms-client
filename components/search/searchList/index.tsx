@@ -16,19 +16,16 @@ const SearchList: React.FC<ISearchList> = ({ setIsShowSearch }) => {
       >
         <div className="border w-full rounded bg-black p">
           <h2
-            className={`text-white text-center bg-[red] py-1 text-2xl rounded mb-2 ${dancingScript.className}`}
+            className={`text-white text-center bg-[red] py-1 text-xl rounded mb-2 ${dancingScript.className}`}
           >
             Search
           </h2>
           <div className="max-h-[300px] overflow-auto">
-            <div className="p-4">
-              <SearchItem />
-              <SearchItem />
+            <div>
               <SearchItem />
               <SearchItem /> <SearchItem />
               <SearchItem />
               <SearchItem />
-              <SearchItem /> <SearchItem />
               <SearchItem />
               <SearchItem />
               {/* <SearchItem />
