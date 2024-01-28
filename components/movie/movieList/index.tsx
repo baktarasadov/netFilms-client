@@ -1,7 +1,8 @@
 import { dancingScript } from "@/utils/font";
 import React from "react";
 import MovieItem from "../movieItem";
-
+import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
+import { IoMdArrowRoundBack, IoMdArrowRoundForward } from "react-icons/io";
 const MovieList = () => {
   return (
     <>
@@ -11,7 +12,7 @@ const MovieList = () => {
         >
           Movies
         </h2>
-        <div className="flex gap-6 mt-4 flex-wrap ">
+        <div className="flex gap-5 mt-4 flex-wrap">
           <MovieItem />
           <MovieItem />
           <MovieItem />
@@ -22,6 +23,14 @@ const MovieList = () => {
           <MovieItem /> <MovieItem />
           <MovieItem />
           <MovieItem />
+        </div>
+        <div className="flex justify-center gap-2 mt-5">
+          <span className="pagination">
+            <IoMdArrowRoundBack />
+          </span>
+          <span className="pagination">
+            <IoMdArrowRoundForward />
+          </span>
         </div>
       </div>
     </>

@@ -58,7 +58,7 @@ const Header = () => {
                   <FaSearch />
                 </span>
                 {isShowSearch && (
-                  <div className="absolute left-0 top-9 w-full">
+                  <div className="absolute z-20 left-0 top-9 w-full">
                     <SearchList setIsShowSearch={setIsShowSearch} />
                   </div>
                 )}

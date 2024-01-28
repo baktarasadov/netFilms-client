@@ -5,7 +5,7 @@ const MovieItem = () => {
   return (
     <>
       <div>
-        <div className="relative w-[170px] h-[270px] rounded  border border-[red] hover:scale-[0.98] transition-all box-shadow-movie">
+        <div className="relative w-[180px] h-[270px] rounded  border border-[red] hover:scale-[0.98] transition-all box-shadow-movie">
           <Image
             layout="fill"
             objectFit="cover"

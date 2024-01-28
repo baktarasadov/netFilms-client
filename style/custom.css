@@ -7,6 +7,10 @@
   @apply w-10/12 mx-auto;
 }
 
+/* .fluid {
+  @apply w-10/12 mx-auto;
+} */
+
 .input-group {
   @apply gap-2 flex items-center border-b text-white  h-10 w-[250px];
 }
@@ -17,4 +21,9 @@
 
 .btn {
   @apply text-white w-full font-semibold py-[5px] rounded-3xl  cursor-pointer hover:opacity-70 transition-all text-[12px];
+}
+
+.pagination {
+  @apply text-white bg-[red]  text-xl rounded-full p-1 hover:bg-[gray] 
+  hover:scale-[0.90] transition-all;
 }
