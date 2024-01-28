@@ -12,13 +12,11 @@ const MovieList = () => {
         >
           Movies
         </h2>
-        <div className="flex gap-5 mt-4 flex-wrap">
-          <MovieItem />
-          <MovieItem />
-          <MovieItem />
-          <MovieItem />
+        <div className="flex gap-5 mt-6 flex-wrap">
           <MovieItem />
           <MovieItem /> <MovieItem />
+          <MovieItem />
+          <MovieItem />
           <MovieItem />
           <MovieItem /> <MovieItem />
           <MovieItem />

@@ -6,7 +6,7 @@ const HomeContainer = () => {
   return (
     <>
       <main className="container">
-        <section className="mt-10">
+        <section className="mt-16">
           <FilterList />
         </section>
         <section className="mt-6">
